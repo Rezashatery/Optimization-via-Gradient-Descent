@@ -1,16 +1,12 @@
-# Optimization via Gradient Descent
 
-solve the general optimization problem where, given a function \( f : \mathbb{R}^n \rightarrow \mathbb{R} \),  compute
+Optimization via Gradient Descent
 
-\[
-x^* = \arg \min_{x \in \mathbb{R}^n} f(x)
-\]
+solve the general optimization problem where, given a function f:Rn→Rf:Rn→R,  compute
 
-In particular,  consider the situation where \( f(x) \) is at least differentiable, which implies that we can compute its gradient \( \nabla f(x) \).
+x∗=arg minx∈Rnf(x)x∗=arg minx∈Rn​f(x)
 
- one of the most common way to approach is to use the Gradient Descent (GD) method, which is an iterative algorithm that, given an initial iterate \( x_0 \in \mathbb{R}^n \) and a positive parameter 
- called step size \( \alpha_k > 0 \) for each iteration, computes
+In particular,  consider the situation where f(x) is at least differentiable, which implies that it can compute its gradient ∇f(x)
 
-\[
-x_{k+1} = x_k - \alpha_k \nabla f(x_k)
-\]
+one of the most common ways to approach is to use the Gradient Descent (GD) method, which is an iterative algorithm that, given an initial iterate x0∈Rnx0​∈Rn and a positive parameter called step size αk>0 for each iteration, computes
+
+xk+1=xk−αk∇f(xk)xk+1​=xk​−αk​∇f(xk​)
